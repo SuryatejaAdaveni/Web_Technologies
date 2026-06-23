@@ -1,0 +1,56 @@
+/* Simple Selectors */
+
+/* 1-id */
+#h1 {
+  color: brown;
+}
+/* 5-universal */
+* {
+  color: white;
+  background-color: black;
+}
+/* 2-class */
+.h2 {
+  color: blue;
+  background-color: violet;
+}
+/* 3-Group */
+h1,
+h2 {
+  color: aqua;
+}
+
+/* 4-Tag names */
+h1 {
+  color: aqua;
+}
+
+h2 {
+  color: aqua;
+}
+
+/* Combinator Selectors */
+
+/* child sel */
+
+div > h1 {
+  color: black;
+}
+
+/* Descendant Sel */
+
+div h1 {
+  color: bisque;
+}
+
+/* Adjacent Siblings */
+
+div + h1 {
+  color: blueviolet;
+}
+
+/* General Sibling Sel */
+
+div ~ h1 {
+  color: chartreuse;
+}

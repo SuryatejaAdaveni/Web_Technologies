@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+      }
+      #parent div {
+      }
+      #logoblock {
+        height: 100px;
+        background-color: black;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #logoblock > img {
+        height: 100px;
+      }
+      #contentblock {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+      }
+      #contentblock > div {
+        height: 400px;
+        width: 350px;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 10px 30px;
+        box-shadow: 1px 1px 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      #contentblock > div:hover {
+        margin-top: -30px;
+        transition: 0.6s;
+        height: 400px;
+        width: 350px;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 10px 30px;
+        box-shadow: 1px 1px 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      #contentblock > div button {
+        margin-top: 10px;
+      }
+      #contentblock > div img {
+        margin-bottom: auto;
+      }
+      #contentblock img {
+        height: 250px;
+        width: 250px;
+      }
+      #bike img {
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+      }
+      div input {
+        width: 250px;
+        height: 50px;
+        border: 3px solid black;
+        border-radius: 10px;
+      }
+      div button {
+        width: 225px;
+        height: 50px;
+        border-radius: 25px;
+        color: white;
+        font-weight: bolder;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="logoblock">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpClBhzfoLzRZZGyKwGM6HHSvdx3iMgdYMqw&s"
+          alt=""
+        />
+      </div>
+      <div id="contentblock">
+        <div id="bike">
+          <img
+            src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy85NTM4NTEyZC1mZGUxLTRmNzMtYmQ1MS05Y2VmZjRlMjU0ZjEucG5n"
+            alt=""
+          />
+          <input type="text" placeholder="Enter KM" />
+          <button>Book now</button>
+        </div>
+        <div id="auto">
+          <img
+            src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9mYzEwMWZmOC04MWExLTQ2YzMtOTk1YS02N2I0YmJkMmYyYmYuanBn"
+            alt=""
+          />
+          <input type="text" placeholder="Enter KM" />
+          <button>Book now</button>
+        </div>
+        <div id="car">
+          <img
+            src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8zMDUxZTYwMi0xMGJiLTRlNjUtYjEyMi1lMzk0ZDgwYTljNDcucG5n"
+            alt=""
+          />
+          <input type="text" placeholder="Enter KM" />
+          <button>Book now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

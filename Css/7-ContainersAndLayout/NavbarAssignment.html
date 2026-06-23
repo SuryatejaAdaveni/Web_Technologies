@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: white;
+      }
+      body {
+        background: url("https://wallpapercave.com/wp/wp2456424.jpg") no-repeat;
+        background-size: cover;
+      }
+      #navblock {
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      #logoblock img {
+        height: 100px;
+      }
+      #menublock,
+      #logoblock,
+      #loginblock {
+        height: 75px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      #logoblock {
+        width: 200px;
+      }
+      #menublock {
+        width: 500px;
+        gap: 30px;
+      }
+      #loginblock {
+        width: 200px;
+      }
+      #menublock a {
+        text-decoration: none;
+      }
+      #menublock a:hover {
+        color: rgb(255, 166, 0);
+      }
+
+      #logoblock img {
+        height: 75px;
+      }
+      #loginblock button {
+        padding: 12px 35px;
+        border: 2px solid orange;
+        border-radius: 50px;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      #loginblock button:hover {
+        border: 2px solid white;
+        background: orange;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navblock">
+      <div id="logoblock">
+        <img
+          src="https://www.freeiconspng.com/uploads/call-of-duty-logo-png-21.png"
+          alt=""
+        />
+      </div>
+      <div id="menublock">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Weapons</a>
+        <a href="">Store</a>
+        <a href="">News</a>
+      </div>
+      <div id="loginblock">
+        <button>Login</button>
+      </div>
+    </div>
+  </body>
+</html>

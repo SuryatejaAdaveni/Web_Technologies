@@ -1,0 +1,33 @@
+/* 3-Pseudo class Selector : */
+/* i-- Dynamic pseudo class */
+
+a:link {
+  color: brown;
+}
+a:hover {
+  cursor: crosshair;
+}
+
+a:visited {
+  color: pink;
+}
+a:active {
+  color: black;
+}
+
+/* ii--Structural pseudo class */
+h1:first-child {
+  background-color: red;
+}
+h1:nth-child(3) {
+  background-color: violet;
+}
+h1:last-child {
+  background-color: green;
+}
+h1:first-of-type {
+  color: white;
+}
+h1:last-of-type {
+  color: red;
+}
