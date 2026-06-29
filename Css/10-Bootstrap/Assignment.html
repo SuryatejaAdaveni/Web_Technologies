@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Assignment.css" />
+  </head>
+  <body>
+    <nav id="navblock">
+      <div id="logoblock">
+        <a href="#home"
+          ><img
+            src="https://www.freeiconspng.com/uploads/call-of-duty-logo-png-21.png"
+            alt=""
+        /></a>
+      </div>
+      <div id="menublock">
+        <a href="#home">Home</a>
+        <a href="#map">Maps</a>
+        <a href="#weapons">New Weapons</a>
+        <a href="#store">Store</a>
+        <a href="#about">About</a>
+      </div>
+      <div id="loginblock">
+        <button>Login</button>
+      </div>
+    </nav>
+    <section id="home">
+      <h1>CALL OF DUTY</h1>
+      <button type="button" id="but1" class="btn btn-primary">
+        Watch Trailer
+      </button>
+      <button type="button" id="but1" class="btn btn-danger">Play Now</button>
+    </section>
+
+    <h1 class="map-title">Maps</h1>
+    <section id="map">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.openai.com/static-rsc-4/IHAfkME3Ik_FK0RBY44ey0vvyt30i7XdS8-ExeBM6mTNadg6NtEc5KuadJfCViqyFdhoIJB5q_8y9sZCqMbfgzFis4ArAmEhkjAPsPS3feKorJxzsOJRR-5o1tqn2E5nrpUoTZyMHPqF-erfm6UUKV9_G5rSTv3mDGsmlTgsW1yw-qy8tNw6GofavN0pJtVe?purpose=fullsize"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.openai.com/static-rsc-4/tN61G_hi7-xuxuKoWgEgtA0ruT0UExizDfX4I1JMprlW_O5lvVRMomyhO78Xr5H_t-eEcPf_HgfpOI7pb_c4BT8wkFr98DkUpG4bUsuLIH56UebMt9y0Ly8n16y-gprWBwm6tnSRATvKDcew9O6hNt0rrN7hTFo8q9R4jr4A8nQc1ryIx8hHoGqBr3XsghDp?purpose=fullsize"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.openai.com/static-rsc-4/Zh8iBtvmzuZp4W-1ceQul4ucLCCSsJKzvI-GBOStWr7XGvtW5weVZzOX8T6OCNMDBCrxaBFHw5ege2apcUM2YeRQA8r2VDh3MvD3dPxAn9dDtvlOuPliKeZsEFaVxWk18yjPZ0L6Hp-Gf1fyPwj_aJzJSU-Zci2TdA-7VXPcRnvW80-KO3OQWT_nIZCcgzm0?purpose=fullsize"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="weapons">
+      <h1 class="weapons-title">Weapons</h1>
+      <div class="container my-5">
+        <div class="row g-4">
+          <!-- 1 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="./m4a1.jpg" class="card-img-top" alt="M4" />
+              <div class="card-body">
+                <h5 class="card-title">M4 Assault Rifle</h5>
+                <p class="card-text">
+                  Balanced assault rifle with excellent accuracy and
+                  reliability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="./ak47.jpg" class="card-img-top" alt="AK-47" />
+              <div class="card-body">
+                <h5 class="card-title">AK-47</h5>
+                <p class="card-text">
+                  High damage rifle with powerful recoil and excellent range.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="./mp5.jpg" class="card-img-top" alt="MP5" />
+              <div class="card-body">
+                <h5 class="card-title">MP5</h5>
+                <p class="card-text">
+                  Classic SMG built for fast movement and close-range combat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="fennec.jpg" class="card-img-top" alt="Fennec" />
+              <div class="card-body">
+                <h5 class="card-title">Fennec 45</h5>
+                <p class="card-text">
+                  Extremely high fire rate makes it deadly in tight spaces.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="kar98.jpg" class="card-img-top" alt="Kar98k" />
+              <div class="card-body">
+                <h5 class="card-title">Kar98k</h5>
+                <p class="card-text">
+                  Legendary marksman rifle loved for quick-scoping.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="hdr.jpg" class="card-img-top" alt="HDR" />
+              <div class="card-body">
+                <h5 class="card-title">HDR Sniper</h5>
+                <p class="card-text">
+                  Powerful long-range sniper with incredible bullet velocity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="kilo-141.jpg" class="card-img-top" alt="Kilo 141" />
+              <div class="card-body">
+                <h5 class="card-title">Kilo 141</h5>
+                <p class="card-text">
+                  Easy-to-control assault rifle ideal for beginners.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="garu.jpg" class="card-img-top" alt="Grau 5.56" />
+              <div class="card-body">
+                <h5 class="card-title">Grau 5.56</h5>
+                <p class="card-text">
+                  Accurate rifle with low recoil and excellent versatility.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="spr.jpg" class="card-img-top" alt="SP-R 208" />
+              <div class="card-body">
+                <h5 class="card-title">SP-R 208</h5>
+                <p class="card-text">
+                  Fast and accurate marksman rifle for aggressive sniping.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100">
+              <img src="rpg-7.jpg" class="card-img-top" alt="RPG-7" />
+              <div class="card-body">
+                <h5 class="card-title">RPG-7</h5>
+                <p class="card-text">
+                  Heavy launcher capable of destroying vehicles and groups.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="store">
+      <section id="store">
+        <h1 class="section-title">STORE</h1>
+
+        <div class="store-container">
+          <div class="store-card">
+            <img
+              src="https://www.dexerto.com/cdn-image/wp-content/uploads/2019/11/battle-pass-modern-warfare-season-one-1-call-of-duty-cod-price-cost-tiers-rewards-watches-weapon-camos-weapons-skins-cosmetic-items-cod-points.jpg?width=1200&quality=60&format=auto"
+              alt="Battle Pass"
+            />
+            <h3>Battle Pass</h3>
+            <p>Unlock exclusive operators, weapon blueprints and rewards.</p>
+            <button class="buy-btn">₹799</button>
+          </div>
+
+          <div class="store-card">
+            <img
+              src="https://preview.redd.it/is-ghost-pack-contingency-gone-v0-ohnpzqbtg9ef1.jpeg?width=640&crop=smart&auto=webp&s=fd5f452ffaaef1ce0f44eaec98f9470171ac36cc"
+              alt="Ghost Bundle"
+            />
+            <h3>Ghost Bundle</h3>
+            <p>
+              Legendary Ghost operator skin with exclusive weapon blueprint.
+            </p>
+            <button class="buy-btn">₹1299</button>
+          </div>
+
+          <div class="store-card">
+            <img
+              src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/fc50b441-ff58-4d8d-8fef-2e5dc489aef9.__CR0,0,600,450_PT0_SX600_V1___.jpg"
+              alt="COD Points"
+            />
+            <h3>COD Points</h3>
+            <p>2400 CP to purchase bundles, skins and Battle Pass.</p>
+            <button class="buy-btn">₹1999</button>
+          </div>
+
+          <div class="store-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7VI2oHAVvFhvqQXVgghrixy6-9-KqjkkAlv7qumvNQ8dm42j0tOlSplL&s=10"
+              alt="Weapon Bundle"
+            />
+            <h3>Weapon Bundle</h3>
+            <p>Premium weapon blueprints with epic camouflage skins.</p>
+            <button class="buy-btn">₹999</button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="about">
+      <section id="about">
+        <div class="about-left">
+          <img
+            src="https://i.pinimg.com/736x/7c/a0/ce/7ca0ce90b9645b8cc660bde3685fcfa6.jpg"
+            alt="Call of Duty"
+          />
+        </div>
+
+        <div class="about-right">
+          <h1>ABOUT CALL OF DUTY</h1>
+
+          <p>
+            Call of Duty is one of the world's most popular first-person shooter
+            franchises. Since its launch in 2003, it has delivered cinematic
+            campaigns, competitive multiplayer battles, cooperative zombie
+            modes, and the massive Warzone battle royale experience.
+          </p>
+
+          <p>
+            Experience intense firefights, customize powerful weapons, unlock
+            elite operators, and fight alongside millions of players from around
+            the globe.
+          </p>
+
+          <div class="about-stats">
+            <div>
+              <h2>20+</h2>
+              <span>Games</span>
+            </div>
+
+            <div>
+              <h2>300+</h2>
+              <span>Maps</span>
+            </div>
+
+            <div>
+              <h2>500M+</h2>
+              <span>Players</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

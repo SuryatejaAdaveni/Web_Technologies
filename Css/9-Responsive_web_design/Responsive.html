@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+      }
+      #navblock {
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: gold;
+      }
+      #navblock > img {
+        display: none;
+        height: 100px;
+        position: relative;
+        right: 30px;
+        mix-blend-mode: darken;
+      }
+      #logoblock,
+      #menublock {
+        width: 400px;
+      }
+      #menublock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #menublock a {
+        text-decoration: none;
+        color: black;
+      }
+      #logoblock img {
+        height: 100px;
+      }
+
+      @media screen and (max-width: 450px) {
+        #navblock > img {
+          display: block;
+        }
+        #menublock {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="navblock">
+        <div id="logoblock">
+          <img
+            src="https://logos-world.net/wp-content/uploads/2020/11/Apple-Music-Logo.png"
+            alt=""
+          />
+        </div>
+        <div id="menublock">
+          <a href="">Home</a><a href="">About</a><a href="">Profile</a
+          ><a href="">Login</a>
+        </div>
+        <img
+          src="https://toppng.com/uploads/preview/menu-icon-png-3-lines-115527444043izrbrvjtv.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
