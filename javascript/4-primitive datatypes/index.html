@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // String
+      let str = "    hello    ";
+      console.log('"Hello"');
+      console.log("'Hello'");
+      console.log("`Hello`");
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+      console.log(str.indexOf("l"));
+      console.log(str.lastIndexOf("l"));
+      console.log(str.charAt(5));
+      console.log(str.replace("l", "r"));
+      console.log(str.replaceAll("l", "r"));
+      console.log(str.trimStart());
+      console.log(str.trimEnd());
+      console.log(str.trim());
+      console.log(str.repeat(2));
+      console.log(str.slice(3));
+      console.log(str.startsWith("he"));
+      console.log(str.endsWith("o"));
+      console.log(str.split("").reverse().join(""));
+
+      // number
+      let a = 10;
+      let b = 10.0;
+      let c = 1 / 0;
+      let d = -1 / 0;
+      console.log(typeof a);
+      console.log(typeof b);
+      console.log(typeof c);
+      console.log(typeof d);
+
+      // Boolean
+      console.log(Boolean("Hello"));
+      console.log(Boolean(1));
+      console.log(Boolean(true));
+      console.log(Boolean([]));
+      console.log(Boolean({}));
+      console.log(Boolean(function () {}));
+      console.log(Boolean(Infinity));
+      console.log(Boolean(-Infinity));
+
+      console.log(Boolean(""));
+      console.log(Boolean(0));
+      console.log(Boolean(false));
+      console.log(Boolean(undefined));
+      console.log(Boolean(null));
+      console.log(Boolean(NaN));
+
+      // Null
+      let e = null;
+      console.log(e);
+      console.log(typeof e);
+
+      // undefined
+      let f = null;
+      console.log(f);
+      console.log(typeof f);
+
+      // BigInt
+      let g = 234567876543234567n;
+      let h = BigInt("0123456789876543234567");
+      let i = BigInt(765434587654345678);
+      console.log(typeof g);
+      console.log(typeof h);
+      console.log(typeof i);
+    </script>
+  </body>
+</html>

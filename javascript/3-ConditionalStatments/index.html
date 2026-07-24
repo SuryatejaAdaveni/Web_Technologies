@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 10;
+      let b = 20;
+      let c = 15;
+      if (a > b && a > c) console.log("A is greater");
+      else if (b > c && a > c) console.log("B is greater");
+      else console.log("B is greater.");
+
+      let str = prompt("Enter a string : ");
+      str = str.toLowerCase();
+      switch (str) {
+        case "monday":
+          console.log("Today Monday");
+          break;
+        case "tuesday":
+          console.log("Today tuesday");
+          break;
+        case "wednesday":
+          console.log("Today wednesday");
+          break;
+        case "friday":
+          console.log("Today friday");
+          break;
+        case "saturday":
+          console.log("Today saturday");
+          break;
+        case "sunday":
+          console.log("Today Sunday");
+          break;
+        default:
+          console.log("default ");
+      }
+    </script>
+  </body>
+</html>

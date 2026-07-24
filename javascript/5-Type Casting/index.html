@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Implicit Type casting
+      console.log(1 + 1);
+      console.log(1 + "1");
+      console.log("1" + "1");
+      console.log(1 + "A");
+      console.log("B" + "B");
+      console.log(1 - 1);
+      console.log(1 - "1");
+      console.log(1 - "A");
+      // console.log(1 - A);
+      console.log(5 > 3);
+      console.log(5 > 3 < 1);
+      console.log(true + 3);
+      console.log(true + true + 3);
+      console.log(false + 0);
+      // console.log(true + False + 0);
+      console.log(10 < 3 > 4);
+
+      // Explicit Type Casting
+      // 1-String()
+      let str1 = String(1);
+      let str2 = String(2);
+      console.log(str1 + str2);
+
+      // 2-Number()
+      // let n1 = Number(prompt("Enter the a:"));
+      // let n2 = Number(prompt("Enter the b:"));
+      // console.log(n1 + n2);
+
+      // 3-Boolean()
+      let result1 = Boolean(1);
+      let result2 = Boolean("False");
+      let result3 = Boolean("True");
+      console.log(result1 + " " + result2 + " " + result3);
+
+      // 4-BigInt()
+      let n3 = BigInt("987654323456789876543");
+      let n4 = BigInt(987654323456789876543n);
+      let n5 = BigInt(987654);
+      console.log(typeof n3);
+      console.log(typeof n4);
+      console.log(typeof n5);
+
+      let a = "10";
+      let b = "20";
+      console.log(a - b);
+      console.log(a * b);
+      console.log(a / b);
+      console.log(a % b);
+    </script>
+  </body>
+</html>

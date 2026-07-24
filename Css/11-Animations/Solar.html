@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #solar {
+        height: 98vh;
+        width: 99vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url("https://images.unsplash.com/photo-1538370965046-79c0d6907d47?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FsYXh5JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww");
+        background-size: cover;
+      }
+
+      #sun {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/731/430/small_2x/the-sun-s-fiery-surface-a-celestial-ball-of-plasma-with-a-transparent-background-png.png");
+        background-size: contain;
+      }
+
+      #mercury-circle {
+        height: 150px;
+        width: 150px;
+        animation: rotate 2s linear 0s infinite normal;
+      }
+
+      #mercury {
+        height: 45px;
+        width: 45px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Mercury.png");
+        top: 105px;
+      }
+
+      #venus-circle {
+        height: 250px;
+        width: 250px;
+        animation: rotate 4s linear 0s infinite normal;
+      }
+
+      #venus {
+        height: 60px;
+        width: 60px;
+        background-image: url("https://png.pngtree.com/png-vector/20240718/ourmid/pngtree-beautiful-venus-planet-on-transparent-png-image_13144099.png");
+        top: 180px;
+      }
+
+      #earth-circle {
+        height: 400px;
+        width: 400px;
+        animation: rotate 6s linear 0s infinite normal;
+      }
+
+      #earth {
+        height: 60px;
+        width: 60px;
+        background-image: url("https://pics.clipartpng.com/Earth_PNG_Clip_Art-2162.png");
+        top: 275px;
+      }
+
+      #mars-circle {
+        height: 500px;
+        width: 500px;
+        animation: rotate 8s linear infinite;
+      }
+
+      #mars {
+        height: 50px;
+        width: 50px;
+        background-image: url("https://www.freepnglogos.com/uploads/mars-png/mars-transparent-png-stickpng-0.png");
+        top: 350px;
+      }
+
+      #jupiter-circle {
+        height: 620px;
+        width: 620px;
+        animation: rotate 10s linear infinite;
+      }
+
+      #jupiter {
+        height: 90px;
+        width: 90px;
+        background-image: url("https://png.pngtree.com/png-clipart/20240309/original/pngtree-beautiful-planet-jupiter-png-image_14549614.png");
+        top: 422px;
+      }
+
+      /* SATURN */
+
+      #saturn-circle {
+        height: 760px;
+        width: 760px;
+        animation: rotate 12s linear infinite;
+      }
+
+      #saturn {
+        height: 100px;
+        width: 100px;
+        background-image: url("https://i.redd.it/3fq1ge1ortv71.png");
+        top: 525px;
+        mix-blend-mode: multiply;
+      }
+
+      /* URANUS */
+
+      #uranus-circle {
+        height: 900px;
+        width: 900px;
+        animation: rotate 14s linear infinite;
+      }
+
+      #uranus {
+        height: 70px;
+        width: 70px;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/065/984/875/non_2x/uranus-planet-space-isolated-on-the-transparent-background-png.png");
+        top: 645px;
+        left: 25px;
+      }
+
+      #neptune-circle {
+        height: 1040px;
+        width: 1040px;
+        animation: rotate 16s linear infinite;
+      }
+
+      #neptune {
+        height: 70px;
+        width: 70px;
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/045/979/661/small/enhance-your-projects-with-isolated-neptune-cut-outs-free-png.png");
+        top: 748px;
+        left: 35px;
+      }
+
+      .orbit {
+        border: 3px solid grey;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      .planet {
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        animation: rotate 2s linear 0s infinite normal;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="solar">
+      <div id="neptune-circle" class="orbit">
+        <div id="neptune" class="planet"></div>
+      </div>
+
+      <div id="uranus-circle" class="orbit">
+        <div id="uranus" class="planet"></div>
+      </div>
+
+      <div id="saturn-circle" class="orbit">
+        <div id="saturn" class="planet"></div>
+      </div>
+
+      <div id="jupiter-circle" class="orbit">
+        <div id="jupiter" class="planet"></div>
+      </div>
+
+      <div id="mars-circle" class="orbit">
+        <div id="mars" class="planet"></div>
+      </div>
+
+      <div id="earth-circle" class="orbit">
+        <div id="earth" class="planet"></div>
+      </div>
+      <div id="venus-circle" class="orbit">
+        <div id="venus" class="planet"></div>
+      </div>
+      <div id="mercury-circle" class="orbit">
+        <div id="mercury" class="planet"></div>
+      </div>
+      <div id="sun"></div>
+    </div>
+  </body>
+</html>
