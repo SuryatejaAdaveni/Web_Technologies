@@ -36,6 +36,9 @@
         alt=""
       />
     </nav>
+    <div class="scroll-progress">
+      <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
     <section id="home">
       <h1>CALL OF DUTY</h1>
       <button type="button" id="but1" class="btn btn-primary">
@@ -355,5 +358,18 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY;
+
+        const pageHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+
+        const scrollPercentage = (scrollTop / pageHeight) * 100;
+
+        document.querySelector("#scrollProgress").style.width =
+          scrollPercentage + "%";
+      });
+    </script>
   </body>
 </html>

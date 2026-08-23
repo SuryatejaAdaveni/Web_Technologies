@@ -8,7 +8,7 @@
   margin: 20px;
   width: 100px;
   border: 2px solid black;
-  background-image: linear-gradient(rgb(15, 203, 213), rgb(187, 17, 202));
+  background: linear-gradient(rgb(15, 203, 213), rgb(187, 17, 202));
 }
 #box2 {
   margin: 20px;
@@ -74,7 +74,7 @@
   height: 100px;
   width: 150px;
   margin: 20px;
-  
+
   border: 2px solid black;
   background-image: conic-gradient(
     rgb(15, 203, 213),

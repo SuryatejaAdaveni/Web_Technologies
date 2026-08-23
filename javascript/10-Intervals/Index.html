@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="tag"></p>
+    <script>
+      let element = document.querySelector("#tag");
+      let num = 0;
+      let watch = setInterval(() => {
+        num++;
+        let date = new Date();
+        element.innerText = new Date().toLocaleTimeString();
+        if (num == 10) {
+          clearInterval(watch);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

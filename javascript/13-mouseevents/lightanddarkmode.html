@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dark {
+        color: white;
+        background-color: black;
+        border: 2px solid red;
+        text-align: center;
+      }
+      .light {
+        color: black;
+        background-color: white;
+        border: 2px solid yellow;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="light">Hey EveryOne</h1>
+    <p class="light">Welcome to pentagon space</p>
+    <button>Dark Mode</button>
+    <script>
+      let btn = document.querySelector("button");
+      let toggle = false;
+      btn.addEventListener("click", () => {
+        let h1 = document.querySelector("h1");
+        let p = document.querySelector("p");
+        let btn = document.querySelector("button");
+
+        if (toggle) {
+          h1.className = "light";
+          p.className = "light";
+          btn.innerText = `Dark Mode`;
+          toggle = false;
+        } else {
+          h1.className = "dark";
+          p.className = "dark";
+          btn.innerText = `Light Mode`;
+          toggle = true;
+        }
+      });
+    </script>
+  </body>
+</html>

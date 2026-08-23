@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./Login.css" />
+
+    <title>Login</title>
+  </head>
+
+  <body>
+    <form action="LoginServ" method="post">
+      <div class="formcontent">
+        <div class="heading">
+          <h1>Welcome Back</h1>
+
+          <p>Login to continue to Adaveni Bank</p>
+        </div>
+
+        <div class="userinput">
+          <label>Email Address</label>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label>Password</label>
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <div class="extra">
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <div class="loginbtn">
+          <button type="submit">Login</button>
+        </div>
+
+        <div class="bottom">
+          Don't have an account?
+
+          <a href="Signup.html"> Create Account </a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

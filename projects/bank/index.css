@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.logocontainer {
+  width: 100%;
+  height: 70px;
+
+  padding: 0 40px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logocontainer img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logocontainer img:hover {
+  transform: scale(1.05);
+}
+.maincard {
+  margin-top: 3vh;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  height: 550px;
+  width: 600px;
+}
+#leftcard {
+  background-image: url(./sources/ABFullcard1.png);
+  background-size: cover;
+  border-radius: 20px;
+  border: 1px solid #0f2d4b;
+}
+#rightcard {
+  background: #fff;
+  border: 1px solid #ead8ab;
+  border-radius: 35px;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.secure {
+  width: fit-content;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: #faf5ea;
+  border: 1px solid #e9d8a6;
+  font-weight: 600;
+  color: #0f2d4b;
+  margin-bottom: 20px;
+}
+
+#rightcard h1 {
+  font-size: 55px;
+  color: #0f2d4b;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.tagline {
+  background: #f4f7fb;
+  border-left: 5px solid #d4af37;
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: #325d91;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.signup {
+  height: 50px;
+  border: none;
+  border-radius: 45px;
+  background: white;
+  border: 3px solid #0f2d4b;
+  color: #0f2d4b;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup:hover {
+  background: #14385d;
+  color: white;
+}
+#rightcard > p {
+  height: 25px;
+  color: #e1ba5d;
+  background: #f4f7fb;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 5px solid #14385d;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.divider hr {
+  flex: 1;
+  border: none;
+  border-top: 2px solid #e5d4a0;
+}
+
+.divider span {
+  color: gray;
+  font-size: 22px;
+}
+
+.login {
+  height: 50px;
+  border-radius: 45px;
+  background: white;
+  border: 3px solid #0f2d4b;
+  color: #0f2d4b;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login:hover {
+  background: #e1ba5d;
+  color: white;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.bottom div {
+  text-align: center;
+  color: #c9a33d;
+  font-size: 32px;
+}
+
+.bottom p {
+  font-size: 20px;
+  color: #325d91;
+  margin-top: 10px;
+}

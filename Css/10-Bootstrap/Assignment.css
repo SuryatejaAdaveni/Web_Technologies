@@ -32,6 +32,22 @@ section {
   right: 30px;
   mix-blend-mode: darken;
 }
+.scroll-progress {
+  position: sticky;
+  top: 75px; /* same height as your navbar */
+  left: 0;
+  width: 100%;
+  height: 4px; /* tiny height */
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 9999;
+}
+
+.scroll-progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #ff9800;
+  transition: width 0.1s linear;
+}
 #logoblock img {
   height: 100px;
 }

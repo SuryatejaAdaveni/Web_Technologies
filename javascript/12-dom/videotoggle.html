@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video height="600px" src="./nani.mp4" onclick="playMethod()"></video>
+
+    <h1 style="color: green">Status : Power On</h1>
+    <button onclick="toggleStatus()">Change</button>
+    <script>
+      let h1 = document.querySelector("h1");
+      let stoggle = false;
+      function toggleStatus() {
+        if (stoggle) {
+          h1.innerText = `Status : Power On`;
+          h1.style.color = "green";
+          stoggle = false;
+        } else {
+          h1.innerText = `Status : Power Off`;
+          h1.style.color = "red";
+          stoggle = true;
+        }
+      }
+
+      let toggle = true;
+      let video = document.querySelector("video");
+      function playMethod() {
+        video.play();
+        if (toggle) {
+          video.play();
+          toggle = false;
+        } else {
+          video.pause();
+          toggle = true;
+        }
+      }
+    </script>
+  </body>
+</html>

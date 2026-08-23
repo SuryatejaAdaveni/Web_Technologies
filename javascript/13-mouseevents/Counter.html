@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>0</h1>
+
+    <button id="dec">Decrease</button>
+    <button id="inc">increase</button>
+    <script>
+      let h1 = document.querySelector("h1");
+      let counter = 0;
+      document.querySelector("#inc").addEventListener("click", () => {
+        counter++;
+        h1.innerText = `${counter}`;
+        h1.style.color = counter == 0 ? "black" : counter > 0 ? "green" : "red";
+      });
+
+      document.querySelector("#dec").addEventListener("click", () => {
+        counter--;
+        h1.innerText = `${counter}`;
+        h1.style.color = counter == 0 ? "black" : counter > 0 ? "green" : "red";
+      });
+    </script>
+  </body>
+</html>

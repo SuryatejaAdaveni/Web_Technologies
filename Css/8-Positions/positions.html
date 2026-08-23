@@ -7,14 +7,17 @@
     <style>
       #parent {
         height: 500px;
-        border: 2px solid black;
-        display: flex;
+        border: 2px solid rgb(0, 0, 0);
         margin: 100px;
         /* position: relative; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
       }
       .boxes {
         height: 150px;
-        width: 150px;
+        width: 400px;
         border: 2px solid black;
         display: flex;
         justify-content: center;
@@ -22,14 +25,17 @@
       }
       #box1 {
         background-color: red;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
+        flex-grow: 1;
+        /* position: fixed; */
+        /* bottom: 20px;
+        right: 20px; */
       }
       #box2 {
+        flex-grow: 2;
         background-color: violet;
       }
       #box3 {
+        /* align-self: self-start; */
         background-color: blue;
         /* position: relative;
         top: 50px;
@@ -37,9 +43,9 @@
       }
       #box4 {
         background-color: brown;
-        /* position: absolute;
+        /* position: absolute; */
         top: 20px;
-        right: 30px; */
+        right: 30px;
       }
       nav {
         background-color: gold;
@@ -50,13 +56,13 @@
     </style>
   </head>
   <body>
-    <!-- <div id="parent">
+    <div id="parent">
       <div class="boxes" id="box1">box1</div>
       <div class="boxes" id="box2">box2</div>
       <div class="boxes" id="box3">box3</div>
       <div class="boxes" id="box4">box4</div>
-    </div> -->
-    <p>
+    </div>
+    <!-- <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere unde quos
       sapiente laborum officia, accusantium consequatur enim ab omnis. Minima
       facilis incidunt doloremque dignissimos praesentium iste dolorum nesciunt
@@ -411,6 +417,6 @@
       Vel iste quasi optio accusamus asperiores voluptates saepe explicabo
       eligendi nesciunt a eos quidem et, iusto facere ab beatae ullam excepturi
       pariatur quibusdam labore aperiam ducimus dolores placeat tempora? Et.
-    </p>
+    </p> -->
   </body>
 </html>

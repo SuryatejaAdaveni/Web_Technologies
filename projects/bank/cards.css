@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  background: url("./sources/dashboardbg.png");
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.card {
+  width: 420px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(14px);
+
+  border-radius: 20px;
+
+  padding: 35px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h1 {
+  text-align: center;
+
+  color: #0f2d4b;
+
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+
+  margin-top: 15px;
+
+  color: #0f2d4b;
+
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+
+  height: 45px;
+
+  margin-top: 8px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding-left: 15px;
+
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+
+  height: 48px;
+
+  margin-top: 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #0f2d4b;
+
+  color: white;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d4af37;
+
+  color: #0f2d4b;
+}
+
+.balance-card h2 {
+  font-size: 42px;
+
+  color: green;
+
+  text-align: center;
+}
+
+.details p {
+  padding: 12px 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+th {
+  background: #0f2d4b;
+
+  color: white;
+
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+
+  text-align: center;
+
+  border-bottom: 1px solid #ddd;
+}

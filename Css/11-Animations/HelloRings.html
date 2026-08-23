@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 95vh;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        transform-style: preserve-3d;
+        transform: perspective(500px) rotateX(50deg);
+      }
+      span {
+        position: absolute;
+        border-radius: 50%;
+        animation: jumping 5s infinite;
+      }
+      @keyframes jumping {
+        0% {
+          transform: translateZ(0px);
+        }
+        50% {
+          transform: translateZ(200px);
+        }
+        100% {
+          transform: translateZ(0px);
+        }
+      }
+      span:nth-child(1) {
+        border: 1px solid violet;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        animation-delay: 0.1s;
+      }
+      span:nth-child(2) {
+        border: 1px solid indigo;
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        animation-delay: 0.2s;
+      }
+      span:nth-child(3) {
+        border: 1px solid blue;
+        top: 50px;
+        left: 50px;
+        right: 50px;
+        bottom: 50px;
+        animation-delay: 0.3s;
+      }
+      span:nth-child(4) {
+        border: 1px solid green;
+        top: 70px;
+        left: 70px;
+        right: 70px;
+        bottom: 70px;
+        animation-delay: 0.4s;
+      }
+      span:nth-child(5) {
+        border: 1px solid yellow;
+        top: 90px;
+        left: 90px;
+        right: 90px;
+        bottom: 90px;
+        animation-delay: 0.5s;
+      }
+      span:nth-child(6) {
+        border: 1px solid orange;
+        top: 110px;
+        left: 110px;
+        right: 110px;
+        bottom: 110px;
+        animation-delay: 0.6s;
+      }
+      span:nth-child(7) {
+        border: 1px solid red;
+        top: 130px;
+        left: 130px;
+        right: 130px;
+        bottom: 130px;
+        animation-delay: 0.7s;
+      }
+      span:nth-child(8) {
+        border: 1px solid goldenrod;
+        top: 150px;
+        left: 150px;
+        right: 150px;
+        bottom: 150px;
+        animation-delay: 0.8s;
+      }
+      span:nth-child(9) {
+        border: 1px solid tomato;
+        top: 170px;
+        left: 170px;
+        right: 170px;
+        bottom: 170px;
+        animation-delay: 0.9s;
+      }
+      span:nth-child(10) {
+        border: 1px solid rgb(10, 228, 195);
+        top: 190px;
+        left: 190px;
+        right: 190px;
+        bottom: 190px;
+        animation-delay: 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        text-shadow: 4px 4px 4px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="rings">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span>Surya</span>
+    </div>
+  </body>
+</html>

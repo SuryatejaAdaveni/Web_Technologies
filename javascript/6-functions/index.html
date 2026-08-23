@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Anonymous Function
+      // funtion(){
+      //   console.log("Anonymous Function.")
+      // };
+
+      let a = 10;
+      let b = 100;
+      // Named Function
+      function add(a, b) {
+        console.log(a + b);
+      }
+      add(a, b);
+
+      // Functional expression
+      let sub = function (a, b) {
+        console.log(a - b);
+      };
+      sub(b, a);
+      // first class function
+      let mul = function (a, b) {
+        console.log(a * b);
+      };
+      mul(a, b);
+
+      // Immediate invoking function
+      (function () {
+        console.log(100 / 10);
+      })();
+
+      (function (pa1, pa2) {
+        console.log(pa1 + " " + pa2);
+      })("Hello", "World");
+
+      // Arrow function
+      let modulus = (a, b) => {
+        console.log(a % b);
+      };
+      modulus(b, a);
+    </script>
+  </body>
+</html>
